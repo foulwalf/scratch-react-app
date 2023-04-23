@@ -1,9 +1,14 @@
+const path =  require("path");
+
 module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "index-webpacked.js",
+    path: path.resolve(__dirname, "dist"),
+  },
   module: {
     rules: [
       {
-        entry: "./src/index.js",
-        output: "./dist/index-webpacked.js",
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
