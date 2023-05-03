@@ -6,7 +6,7 @@ function App(){
     return (
         <div>
             <p>You clicked {count} times</p>
-            <button onClick={clickHandler}> Click me </button>
+            <button onClick={clickHandler}> Click me please </button>
             <input type="text"/>
         </div>
     )
